@@ -10,8 +10,8 @@
 
 # Bypass firewall in network-poverty areas (Mainland CN)
 # Do change the proxy ports according to your own configurations
-alias fuckgfw="export http_proxy=127.0.0.1:8001 https_proxy=127.0.0.1:8001"
-alias unfuckgfw="unset http_proxy https_proxy"
+alias fuckgfw="export http_proxy=127.0.0.1:8001 https_proxy=127.0.0.1:8001 && echo '> You are out!'"
+alias unfuckgfw="unset http_proxy https_proxy && echo '> Welcome inside ;)'"
 
 # Jump straight to my Code folder and say something cute via cowsay
 # Do change $PATH_TO_YOUR_CODE according to your own configurations
