@@ -21,8 +21,8 @@
 Some of the things you must change are:
 
 1. Line 13: `alias fuckgfw`, change proxy configs according to your own system proxy ports.
-2. Line 19: `alias gocode`, change $PATH_TO_YOUR_CODE to your code repo path.
-3. Line 32: `alias sshsvr`, change $PATH_TO_KEY and $SERVER_IP according to your own configs. This `alias` is used to ssh onto a remote server you own. If you don't have said server, you can ignore this.
+2. Line 19: `alias gocode`, change `$PATH_TO_YOUR_CODE` to your code repo path.
+3. Line 32: `alias sshsvr`, change `$PATH_TO_KEY` and `$SERVER_IP` according to your own configs. This `alias` is used to ssh onto a remote server you own. If you don't have said server, you can ignore this.
 
 ## Something else to notice:
 
@@ -30,13 +30,23 @@ Some of the things you must change are:
 
 - `fortune`: Generate a random quote by a random person.
 
-![img](https://i.loli.net/2018/05/31/5b0fdd7abdb6c.jpg)
+<div style="max-width:400px;">![img](https://i.loli.net/2018/05/31/5b0fdd7abdb6c.jpg)</div>
  
 - `cowsay`: Draws a cow in ascii, and says something.
 
-![img](https://i.loli.net/2018/05/31/5b0fddea0f161.jpg)
+<div style="max-width:400px;">![img](https://i.loli.net/2018/05/31/5b0fddea0f161.jpg)</div>
 
-Both are available via `brew install ..` or `apt-get install ..` or other package managers on your devices, I believe.
+Both are available via package managers on your devices.
+
+**macOS**: `brew install fortune && brew install cowsay`
+
+**Debian based Linux**: `sudo apt-get install fortune && apt-get install cowsay`
+
+**Fedora, Red Hat**: `sudo yum install fortune && yum install cowsay`
+
+**Arch Linux, Manjaro**: `sudo pacman -S fortune && pacman -S cowsay`
+
+and so on...
 
 ## Oh-my-zsh default alias
 
@@ -48,7 +58,7 @@ A complete list of oh-my-zsh default alias can be found [here](https://github.co
 
 `glola`: prints a nice commit history. I really like this BTW. :star:
 
-![img](https://i.loli.net/2018/05/31/5b0fdfd7a21e4.jpg)
+<div style="max-width:400px;">![img](https://i.loli.net/2018/05/31/5b0fdfd7a21e4.jpg)</div>
 
 ## Contributing
 
