@@ -58,7 +58,7 @@ A complete list of oh-my-zsh default alias can be found [here](https://github.co
 
 `glola`: prints a nice commit history. I really like this BTW. :star:
 
-<div style="width:400px; display: block; margin: 0 auto;"><img src="https://i.loli.net/2018/05/31/5b0fdfd7a21e4.jpg" alt="img"></div>
+<div align="center"><img src="https://i.loli.net/2018/05/31/5b0fdfd7a21e4.jpg" alt="img" width="400px"></div>
 
 ## Contributing
 
