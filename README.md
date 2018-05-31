@@ -1,6 +1,12 @@
+![img](https://i.loli.net/2018/05/31/5b0ff51dc2bf9.png)
+
 # awesome-alias
 
-Some of my favorite aliases for my .zshrc file.
+![love](https://img.shields.io/badge/Made%20with-LOVE-ff69b4.svg)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![zsh](https://img.shields.io/badge/configured%20for-zsh-brightgreen.svg)](https://github.com/robbyrussell/oh-my-zsh)
+
+> Some of my favorite aliases for my .zshrc file.
 
 ## Usage
 
