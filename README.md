@@ -30,11 +30,11 @@ Some of the things you must change are:
 
 - `fortune`: Generate a random quote by a random person.
 
-<div style="max-width:400px">![img](https://i.loli.net/2018/05/31/5b0fdd7abdb6c.jpg)</div>
+<div style="max-width:400px; display: block; margin: 0 auto"><img src="https://i.loli.net/2018/05/31/5b0fdd7abdb6c.jpg" alt="img"></div>
  
 - `cowsay`: Draws a cow in ascii, and says something.
 
-<div style="max-width:400px">![img](https://i.loli.net/2018/05/31/5b0fddea0f161.jpg)</div>
+<div style="max-width:400px; display: block; margin: 0 auto"><img src="https://i.loli.net/2018/05/31/5b0fddea0f161.jpg" alt="img"></div>
 
 Both are available via package managers on your devices.
 
@@ -58,7 +58,7 @@ A complete list of oh-my-zsh default alias can be found [here](https://github.co
 
 `glola`: prints a nice commit history. I really like this BTW. :star:
 
-<div style="max-width:400px">![img](https://i.loli.net/2018/05/31/5b0fdfd7a21e4.jpg)</div>
+<div style="max-width:400px; display: block; margin: 0 auto"><img src="https://i.loli.net/2018/05/31/5b0fdfd7a21e4.jpg" alt="img"></div>
 
 ## Contributing
 
