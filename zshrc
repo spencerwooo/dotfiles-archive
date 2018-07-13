@@ -30,3 +30,6 @@ alias buu="brew update && brew upgrade"
 # Change $PATH_TO_KEY and $SERVER_IP according to your configurations
 # For example: alias sshaws="ssh -i ~/.ssh/rsa_id ubuntu@x.x.x.x"
 alias sshsvr="ssh -i $PATH_TO_KEY $SERVER_IP"
+
+# Check current ip (When running `fuckgfw` you want to know whether you are out or not.)
+alias whatsmyip="curl ip.cn"
