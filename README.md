@@ -44,8 +44,6 @@ Both are available via package managers on your devices.
 
 **Fedora, Red Hat**: `sudo yum install fortune && yum install cowsay`
 
-**Arch Linux, Manjaro**: `sudo pacman -S fortune && pacman -S cowsay`
-
 and so on...
 
 ## Oh-my-zsh default alias
