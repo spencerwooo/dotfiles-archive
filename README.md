@@ -62,6 +62,7 @@ A complete list of oh-my-zsh default alias can be found [here](https://github.co
 
 Fork away! :heart: Don't forget to PR back, I look forward to seeing your aliases. :beer:
 
+
 ## License
 
 This is published via the [MIT License](https://github.com/spencerwoo98/awesome-alias/blob/master/LICENSE).
