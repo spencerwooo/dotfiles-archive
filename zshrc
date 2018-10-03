@@ -26,6 +26,12 @@ alias reload="source $HOME/.zshrc && echo '>> OH MY, ZSH configurations are relo
 # Update all packages via Homebrew (If you use a Mac)
 alias buu="brew update && brew upgrade"
 
+# Update all packages via apt (Ubuntu/Debian)
+alias auu="sudo apt update && sudo apt upgrade"
+
+# Update all packages via pacman (Arch Linux/Manjaro)
+alias puu="sudo pacman -Syu"
+
 # SSH to remote server
 # Change $PATH_TO_KEY and $SERVER_IP according to your configurations
 # For example: alias sshaws="ssh -i ~/.ssh/rsa_id ubuntu@x.x.x.x"
@@ -33,3 +39,9 @@ alias sshsvr="ssh -i $PATH_TO_KEY $SERVER_IP"
 
 # Check current ip (When running `fuckgfw` you want to know whether you are out or not.)
 alias whatsmyip="curl ip.cn"
+
+# Gnome desktop environments: open folder like you do on a Mac
+alias open="nautilus"
+
+# Login to mySQL server
+alias loginmysql="mysql -u root -p"

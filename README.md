@@ -16,6 +16,10 @@
 4. Run `source $HOME/.zshrc` and you are good to go!
 5. Enjoy~ :beer:
 
+## Detailed `.zshrc` file of this repo
+
+Located at [awesome-zshrc](https://github.com/spencerwoo98/awesome-alias/blob/master/zshrc), follow the link to see.
+
 ## Something to notice
 
 Some of the things you must change are:
@@ -38,11 +42,13 @@ Some of the things you must change are:
 
 Both are available via package managers on your devices.
 
-**macOS**: `brew install fortune && brew install cowsay`
+**macOS**: `brew install fortune cowsay`
 
-**Debian based Linux**: `sudo apt-get install fortune && apt-get install cowsay`
+**Debian based Linux**: `sudo apt install fortune cowsay -y`
 
-**Fedora, Red Hat**: `sudo yum install fortune && yum install cowsay`
+**Fedora, Red Hat**: `sudo yum install fortune cowsay -y`
+
+**Arch Linux, Manjaro**: `sudo pacman -S fortune cowsay -y`
 
 and so on...
 
