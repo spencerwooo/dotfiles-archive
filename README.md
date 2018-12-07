@@ -1,26 +1,36 @@
-![img](https://i.loli.net/2018/05/31/5b0ff51dc2bf9.png)
+<!-- ![img](https://i.loli.net/2018/05/31/5b0ff51dc2bf9.png) -->
 
-# awesome-alias
+# dotfiles
 
 ![love](https://img.shields.io/badge/Made%20with-LOVE-ff69b4.svg)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![zsh](https://img.shields.io/badge/configured%20for-zsh-brightgreen.svg)](https://github.com/robbyrussell/oh-my-zsh)
 
-> Some of my favorite aliases for my .zshrc file.
+> ~~Some of my favorite aliases for my .zshrc file.~~ Not anymore.
 
-## Usage
+This repo contains my dotfiles for `zsh` and `PowerShell`.
 
-1. First run `git clone https://github.com/spencerwoo98/awesome-alias` in a folder you like.
-2. Then copy & paste all of `zshrc` into your own `.zshrc` file, usually located in `$HOME/.zshrc`.
-3. Tweak the aliases according to your own configs.
-4. Run `source $HOME/.zshrc` and you are good to go!
-5. Enjoy~ :beer:
+## Looks & Features
 
-## Detailed `.zshrc` file of this repo
+- Color Theme: OneHalfDark
+- Font: [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts)
+- Terminal: [Terminus](https://github.com/eugeny/terminus)
 
-Located at [awesome-zshrc](https://github.com/spencerwoo98/awesome-alias/blob/master/zshrc), follow the link to see.
+**PowerShell**
 
-## Something to notice
+- [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
+- Theme: `ShureTechy.psm1`
+
+![](https://i.loli.net/2018/12/07/5c0a80b80a156.png)
+
+**ZSH**
+
+- [Oh-My-Zsh](https://ohmyz.sh/)
+- Theme: kolo
+
+![](https://i.loli.net/2018/12/07/5c0a81679fa5a.png)
+
+## Do this
 
 Some of the things you must change are:
 
@@ -42,16 +52,6 @@ Some of the things you must change are:
 
 Both are available via package managers on your devices.
 
-**macOS**: `brew install fortune cowsay`
-
-**Debian based Linux**: `sudo apt install fortune cowsay -y`
-
-**Fedora, Red Hat**: `sudo yum install fortune cowsay -y`
-
-**Arch Linux, Manjaro**: `sudo pacman -S fortune cowsay -y`
-
-and so on...
-
 ## Oh-my-zsh default alias
 
 A complete list of oh-my-zsh default alias can be found [here](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh), but below are some of my favorites.
@@ -63,11 +63,6 @@ A complete list of oh-my-zsh default alias can be found [here](https://github.co
 `glola`: prints a nice commit history. I really like this BTW. :star:
 
 <div align="center"><img src="https://i.loli.net/2018/05/31/5b0fdfd7a21e4.jpg" alt="img" width="600px"></div>
-
-## Contributing
-
-Fork away! :heart: Don't forget to PR back, I look forward to seeing your aliases. :beer:
-
 
 ## License
 
