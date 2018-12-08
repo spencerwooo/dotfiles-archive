@@ -19,9 +19,25 @@ This repo contains my dotfiles for `zsh` and `PowerShell`.
 **PowerShell**
 
 - [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
-- Theme: `ShureTechy.psm1`
+- Theme: `SpencerTechy.psm1`
 
 ![](https://i.loli.net/2018/12/07/5c0a80b80a156.png)
+
+Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information on how to install `Oh-My-Posh`, then:
+
+```PowerShell
+$ThemeSettings
+```
+
+![](https://i.loli.net/2018/12/08/5c0b528cca26c.png)
+
+Then check your theme folder, navigate there, and put `SpencerTechy.psm1` there.
+
+Reload theme by:
+
+```PowerShell
+Set-Theme SpencerTechy
+```
 
 **ZSH**
 
@@ -34,9 +50,9 @@ This repo contains my dotfiles for `zsh` and `PowerShell`.
 
 Some of the things you must change are:
 
-1. Line 13: `alias fuckgfw`, change proxy configs according to your own system proxy ports.
-2. Line 19: `alias gocode`, change `$PATH_TO_YOUR_CODE` to your code repo path.
-3. Line 32: `alias sshsvr`, change `$PATH_TO_KEY` and `$SERVER_IP` according to your own configs. This `alias` is used to ssh onto a remote server you own. If you don't have said server, you can ignore this.
+1. `alias fuckgfw`, change proxy configs according to your own system proxy ports.
+2. `alias gocode`, change `$PATH_TO_YOUR_CODE` to your code repo path.
+3. `alias sshsvr`, change `$PATH_TO_KEY` and `$SERVER_IP` according to your own configs. This `alias` is used to ssh onto a remote server you own. If you don't have said server, you can ignore this.
 
 ## Something else to notice:
 
