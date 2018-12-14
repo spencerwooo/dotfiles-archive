@@ -49,17 +49,17 @@ I use:
 
 - `scoop` as Windows' package manager
 
-![](https://i.loli.net/2018/12/14/5c133c6ee4a12.png)
+![](https://i.loli.net/2018/12/14/5c1395b241df9.png)
 
-- Where I removed PowerShell's default alias:
+And I removed PowerShell's default alias via:
 
 ```powershell
-# Remove curl alias
+# Remove default curl and ls aliases
 Remove-Item alias:curl -force
 Remove-Item alias:ls -force
 ```
 
-See `ps_profile.ps1` for detailed information.
+See [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_profile.ps1) for detailed information.
 
 ### ZSH
 
