@@ -16,12 +16,12 @@ This repo contains my dotfiles for `zsh` and `PowerShell`.
 - Font: [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts)
 - Terminal: [Terminus](https://github.com/eugeny/terminus)
 
-**PowerShell**
+### PowerShell
 
 - [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
 - Theme: `SpencerTechy.psm1`
 
-![](https://i.loli.net/2018/12/07/5c0a80b80a156.png)
+![](https://i.loli.net/2018/12/14/5c13352eab31b.png)
 
 Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information on how to install `Oh-My-Posh`, then:
 
@@ -39,24 +39,42 @@ Reload theme by:
 Set-Theme SpencerTechy
 ```
 
-**ZSH**
+Also, here's my PowerShell configuration profile: [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_profile.ps1) for reference.
+
+I use:
+
+- `colorls` for better colored `ls` with icons
+
+![](https://i.loli.net/2018/12/14/5c133b9663366.png)
+
+- `scoop` as Windows' package manager
+
+![](https://i.loli.net/2018/12/14/5c133c6ee4a12.png)
+
+- Where I removed PowerShell's default alias:
+
+```powershell
+# Remove curl alias
+Remove-Item alias:curl -force
+Remove-Item alias:ls -force
+```
+
+See `ps_profile.ps1` for detailed information.
+
+### ZSH
 
 - [Oh-My-Zsh](https://ohmyz.sh/)
 - Theme: kolo
 
 ![](https://i.loli.net/2018/12/07/5c0a81679fa5a.png)
 
-## Do this
-
-Some of the things you must change are:
+**Change according to your own configs:**
 
 1. `alias fuckgfw`, change proxy configs according to your own system proxy ports.
 2. `alias gocode`, change `$PATH_TO_YOUR_CODE` to your code repo path.
 3. `alias sshsvr`, change `$PATH_TO_KEY` and `$SERVER_IP` according to your own configs. This `alias` is used to ssh onto a remote server you own. If you don't have said server, you can ignore this.
 
-## Something else to notice:
-
-**`alias gocode`'s dependencies:**
+4. `alias gocode`'s dependencies:
 
 - `fortune`: Generate a random quote by a random person.
 
@@ -68,7 +86,7 @@ Some of the things you must change are:
 
 Both are available via package managers on your devices.
 
-## Oh-my-zsh default alias
+**Oh-my-zsh default alias**
 
 A complete list of oh-my-zsh default alias can be found [here](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh), but below are some of my favorites.
 
