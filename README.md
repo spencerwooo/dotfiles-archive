@@ -29,7 +29,7 @@ Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information
 $ThemeSettings
 ```
 
-![](https://i.loli.net/2018/12/08/5c0b528cca26c.png)
+![](https://i.loli.net/2018/12/14/5c13964044460.png)
 
 Then check your theme folder, navigate there, and put `SpencerTechy.psm1` there.
 
