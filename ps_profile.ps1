@@ -28,5 +28,9 @@ Set-Alias glola GitLogPretty
 Set-Alias gst GitStat
 Set-Alias myip GetMyIp
 Set-Alias ls PrettyLS
+
+# Tab completion
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+
 # Set theme
 Set-Theme SpencerTechy
