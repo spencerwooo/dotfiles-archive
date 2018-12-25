@@ -14,14 +14,16 @@ This repo contains my dotfiles for `zsh` and `PowerShell`.
 
 - Color Theme: OneHalfDark
 - Font: [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts)
-- Terminal: [Terminus](https://github.com/eugeny/terminus)
+- Terminal: [Fluent Terminal](https://github.com/felixse/FluentTerminal)
 
 ### PowerShell
 
 - [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
 - Theme: `SpencerTechy.psm1`
 
-![](https://i.loli.net/2018/12/14/5c13352eab31b.png)
+![](https://i.loli.net/2018/12/25/5c21bbf5b6033.png)
+
+![](https://i.loli.net/2018/12/25/5c21bbbcd6f3e.png)
 
 Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information on how to install `Oh-My-Posh`, then:
 
@@ -29,7 +31,7 @@ Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information
 $ThemeSettings
 ```
 
-![](https://i.loli.net/2018/12/14/5c13964044460.png)
+![](https://i.loli.net/2018/12/25/5c21bdfd65394.png)
 
 Then check your theme folder, navigate there, and put `SpencerTechy.psm1` there.
 
@@ -43,20 +45,20 @@ Also, here's my PowerShell configuration profile: [ps_profile.ps1](https://githu
 
 I use:
 
-- `colorls` for better colored `ls` with icons
+- [`Get-ChildItemColor`](https://github.com/joonro/Get-ChildItemColor) for better colored `ls`
 
-![](https://i.loli.net/2018/12/14/5c133b9663366.png)
+![](https://i.loli.net/2018/12/25/5c21bd0e11860.png)
 
 - `scoop` as Windows' package manager
 
-![](https://i.loli.net/2018/12/14/5c1395b241df9.png)
+![](https://i.loli.net/2018/12/25/5c21bd842c7e5.png)
 
 And I removed PowerShell's default alias via:
 
 ```powershell
-# Remove default curl and ls aliases
-Remove-Item alias:curl -force
-Remove-Item alias:ls -force
+# Remove curl alias
+If (Test-Path Alias:curl) {Remove-Item Alias:curl}
+If (Test-Path Alias:curl) {Remove-Item Alias:curl}
 ```
 
 See [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_profile.ps1) for detailed information.
