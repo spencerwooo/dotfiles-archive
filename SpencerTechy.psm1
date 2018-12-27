@@ -11,8 +11,8 @@ function Write-Theme {
     $lastColor = $sl.Colors.PromptBackgroundColor
     $prompt += Write-Prompt -Object "?" -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor1
     
-    $prompt = Write-Prompt -Object " $($sl.PromptSymbols.StartSymbol) " -ForegroundColor $sl.Colors.PromptForegroundColor -BackgroundColor $sl.Colors.PromptBackgroundColor
-    $prompt += Write-Prompt -Object "$($sl.PromptSymbols.SegmentForwardSymbol) " -ForegroundColor $lastColor -BackgroundColor $sl.Colors.PromptUserBackgroundColor
+    $prompt = Write-Prompt -Object " $($sl.PromptSymbols.StartSymbol) " -ForegroundColor $sl.Colors.PromptForegroundColor -BackgroundColor $sl.Colors.PromptIndicatorForegroundColor3
+    $prompt += Write-Prompt -Object "$($sl.PromptSymbols.SegmentForwardSymbol) " -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor3 -BackgroundColor $sl.Colors.PromptUserBackgroundColor
     #check for elevated prompt
     If (Test-Administrator) {
         $prompt += Write-Prompt -Object "$($sl.PromptSymbols.ElevatedSymbol)" -ForegroundColor $sl.Colors.AdminIconForegroundColor -BackgroundColor $sl.Colors.PromptUserBackgroundColor
@@ -25,7 +25,7 @@ function Write-Theme {
     $computer = 'ThinkPad'
     $path = Get-ShortPath -dir $pwd
     if (Test-NotDefaultUser($user)) {
-        $prompt += Write-Prompt -Object "$user@$computer " -ForegroundColor $sl.Colors.SessionInfoForegroundColor -BackgroundColor $sl.Colors.PromptUserBackgroundColor
+        $prompt += Write-Prompt -Object "$user@$computer " -ForegroundColor $sl.Colors.PromptForegroundColor -BackgroundColor $sl.Colors.PromptUserBackgroundColor
     }
 
     if (Test-VirtualEnv) {
@@ -58,6 +58,15 @@ function Write-Theme {
         $prompt += Write-Prompt -Object " $($sl.PromptSymbols.SuccessCommandSymbol)" -ForegroundColor $sl.Colors.CommandSuccessIconForegroundColor -BackgroundColor $sl.Colors.SessionInfoBackgroundColor
     }
 
+    # $timeStamp = Get-Date -UFormat %T
+    # $timestamp = " $timeStamp "
+
+    # $prompt += Set-CursorForRightBlockWrite -textLength ($timestamp.Length + $sl.PromptSymbols.TimeSymbol.Length + $sl.PromptSymbols.SegmentBackwardSymbol.Length + $sl.PromptSymbols.SegmentForwardSymbol.Length + 1)
+    # $prompt += Write-Prompt $sl.PromptSymbols.SegmentBackwardSymbol -ForegroundColor $sl.Colors.PromptBackgroundColor -BackgroundColor $sl.Colors.SessionInfoBackgroundColor
+    # $prompt += Write-Prompt $sl.PromptSymbols.TimeSymbol -ForegroundColor $sl.Colors.PromptForegroundColor -BackgroundColor $sl.Colors.PromptBackgroundColor
+    # $prompt += Write-Prompt $timeStamp -ForegroundColor $sl.Colors.PromptForegroundColor -BackgroundColor $sl.Colors.PromptBackgroundColor
+    # $prompt += Write-Prompt $sl.PromptSymbols.SegmentForwardSymbol -ForegroundColor $sl.Colors.PromptBackgroundColor -BackgroundColor $sl.Colors.SessionInfoBackgroundColor
+
     $prompt += Set-Newline
 
     if ($with) {
@@ -75,12 +84,12 @@ function Write-Theme {
 $sl = $global:ThemeSettings #local settings
 $sl.PromptSymbols.StartSymbol = [char]::ConvertFromUtf32(0x2B53)
 $sl.PromptSymbols.PromptIndicator = [char]::ConvertFromUtf32(0x276F)
-$sl.PromptSymbols.SegmentForwardSymbol = [char]::ConvertFromUtf32(0xE0B0) #(0xE0B4)
+$sl.PromptSymbols.SegmentForwardSymbol = [char]::ConvertFromUtf32(0xE0B0) #(0xE0B4) #
 $sl.PromptSymbols.SegmentBackwardSymbol = [char]::ConvertFromUtf32(0xE0B2)
 $sl.PromptSymbols.TimeSymbol = ' ' + [char]::ConvertFromUtf32(0x235F)
 $sl.PromptSymbols.FailedCommandSymbol = [char]::ConvertFromUtf32(0x2718)
 $sl.PromptSymbols.SuccessCommandSymbol = [char]::ConvertFromUtf32(0x2714)
-$sl.Colors.PromptForegroundColor = [ConsoleColor]::White
+$sl.Colors.PromptForegroundColor = [ConsoleColor]::Black
 $sl.Colors.PromptBackgroundColor = [ConsoleColor]::DarkBlue
 $sl.Colors.PromptSymbolColor = [ConsoleColor]::White
 $sl.Colors.PromptHighlightColor = [ConsoleColor]::DarkBlue
@@ -94,4 +103,4 @@ $sl.Colors.CommandFailedIconForegroundColor = [System.ConsoleColor]::DarkRed
 $sl.Colors.PromptIndicatorForegroundColor1 = [ConsoleColor]::DarkBlue
 $sl.Colors.PromptIndicatorForegroundColor2 = [ConsoleColor]::DarkYellow
 $sl.Colors.PromptIndicatorForegroundColor3 = [ConsoleColor]::DarkMagenta
-$sl.Colors.PromptUserBackgroundColor = [ConsoleColor]::DarkGray
+$sl.Colors.PromptUserBackgroundColor = [ConsoleColor]::Cyan
