@@ -2,13 +2,30 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/spencerwoo/.oh-my-zsh"
+export ZSH="/home/spencer/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="kolo"
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context dir vcs status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_STATUS_CROSS=true
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B4'
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=$'\uE0B6'
+POWERLEVEL9K_MODE=nerdfont-complete
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_first_and_last
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="╭"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="╰\u276F\u276F\u276F "
+POWERLEVEL9K_OS_ICON_FOREGROUND="black"
+POWERLEVEL9K_OS_ICON_BACKGROUND="magenta"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="black"
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="black"
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="cyan"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -97,17 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-
-# ----------------------------------------
-# ZSH(Oh-my-zsh) aliases I find attractive
-# ----------------------------------------
-
-## Below are default alias for using git in oh-my-zsh that I find useful
-## `glola` is a magic alias!!!
-# alias gst="git status"
-# alias gaa='git add --all'
-# alias glola="git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
+alias colortest="curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash"
 
 # Bypass firewall in network-poverty areas (Mainland CN)
 # Do change the proxy ports according to your own configurations
