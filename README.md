@@ -66,39 +66,19 @@ See [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_prof
 ### ZSH
 
 - [Oh-My-Zsh](https://ohmyz.sh/)
-- Theme: kolo
+- [Powerlevel9k](https://github.com/bhilburn/powerlevel9k)
+- [Hyper](https://hyper.is)
 
-![](https://i.loli.net/2018/12/07/5c0a81679fa5a.png)
+**On Linux:**
 
-**Change according to your own configs:**
+- ZSH config files: [`_arch_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master/_arch_zshrc)
+- Hyper config files: [`_hyper.js`](https://github.com/spencerwooo/dotfiles/blob/master/_hyper.js)
 
-1. `alias fuckgfw`, change proxy configs according to your own system proxy ports.
-2. `alias gocode`, change `$PATH_TO_YOUR_CODE` to your code repo path.
-3. `alias sshsvr`, change `$PATH_TO_KEY` and `$SERVER_IP` according to your own configs. This `alias` is used to ssh onto a remote server you own. If you don't have said server, you can ignore this.
+![](https://i.loli.net/2018/12/31/5c29a4c819cab.png)
 
-4. `alias gocode`'s dependencies:
+**On WSL Windows:**
 
-- `fortune`: Generate a random quote by a random person.
-
-<div align="center"><img src="https://i.loli.net/2018/05/31/5b0fdd7abdb6c.jpg" alt="img" width="600px"></div>
- 
-- `cowsay`: Draws a cow in ascii, and says something.
-
-<div align="center"><img src="https://i.loli.net/2018/05/31/5b0fddea0f161.jpg" alt="img" width="600px"></div>
-
-Both are available via package managers on your devices.
-
-**Oh-my-zsh default alias**
-
-A complete list of oh-my-zsh default alias can be found [here](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh), but below are some of my favorites.
-
-`gst`: is short for `git status`.
-
-`gaa`: is short for `git add --all`.
-
-`glola`: prints a nice commit history. I really like this BTW. :star:
-
-<div align="center"><img src="https://i.loli.net/2018/05/31/5b0fdfd7a21e4.jpg" alt="img" width="600px"></div>
+Config files: [`_wsl_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master/_wsl_zshrc)
 
 ## License
 
