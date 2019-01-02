@@ -21,9 +21,7 @@ This repo contains my dotfiles for `zsh` and `PowerShell`.
 - [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
 - Theme: `SpencerTechy.psm1`
 
-![](https://i.loli.net/2018/12/25/5c21bbf5b6033.png)
-
-![](https://i.loli.net/2018/12/25/5c21bbbcd6f3e.png)
+![](https://i.loli.net/2019/01/02/5c2c80ca73fc9.png)
 
 Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information on how to install `Oh-My-Posh`, then:
 
@@ -31,7 +29,7 @@ Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information
 $ThemeSettings
 ```
 
-![](https://i.loli.net/2018/12/25/5c21bdfd65394.png)
+![](https://i.loli.net/2019/01/02/5c2c80fa88375.png)
 
 Then check your theme folder, navigate there, and put `SpencerTechy.psm1` there.
 
@@ -47,11 +45,11 @@ I use:
 
 - [`Get-ChildItemColor`](https://github.com/joonro/Get-ChildItemColor) for better colored `ls`
 
-![](https://i.loli.net/2018/12/25/5c21bd0e11860.png)
+![](https://i.loli.net/2019/01/02/5c2c815f3633c.png)
 
 - `scoop` as Windows' package manager
 
-![](https://i.loli.net/2018/12/25/5c21bd842c7e5.png)
+![](https://i.loli.net/2019/01/02/5c2c81f55bede.png)
 
 And I removed PowerShell's default alias via:
 
@@ -79,6 +77,8 @@ See [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_prof
 **On WSL Windows:**
 
 Config files: [`_wsl_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master/_wsl_zshrc)
+
+![](https://i.loli.net/2019/01/02/5c2c7e6e0e165.png)
 
 ## License
 
