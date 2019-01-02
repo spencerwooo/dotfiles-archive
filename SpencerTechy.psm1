@@ -9,7 +9,7 @@ function Write-Theme {
     )
 
     $lastColor = $sl.Colors.PromptBackgroundColor
-    $prompt += Write-Prompt -Object "?" -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor1
+    $prompt += Write-Prompt -Object "╭" -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor1
     
     $prompt = Write-Prompt -Object " $($sl.PromptSymbols.StartSymbol) " -ForegroundColor $sl.Colors.PromptForegroundColor -BackgroundColor $sl.Colors.PromptIndicatorForegroundColor3
     $prompt += Write-Prompt -Object "$($sl.PromptSymbols.SegmentForwardSymbol) " -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor3 -BackgroundColor $sl.Colors.PromptUserBackgroundColor
@@ -19,10 +19,8 @@ function Write-Theme {
     }
 
 
-    # $user = [System.Environment]::UserName
-    $user = 'Spencer'
-    # $computer = [System.Environment]::MachineName
-    $computer = 'ThinkPad'
+    $user = [System.Environment]::UserName
+    $computer = [System.Environment]::MachineName
     $path = Get-ShortPath -dir $pwd
     if (Test-NotDefaultUser($user)) {
         $prompt += Write-Prompt -Object "$user@$computer " -ForegroundColor $sl.Colors.PromptForegroundColor -BackgroundColor $sl.Colors.PromptUserBackgroundColor
@@ -73,7 +71,7 @@ function Write-Theme {
         $prompt += Write-Prompt -Object "$($with.ToUpper()) " -BackgroundColor $sl.Colors.WithBackgroundColor -ForegroundColor $sl.Colors.WithForegroundColor
     }
 
-    $prompt += Write-Prompt -Object "?" -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor1
+    $prompt += Write-Prompt -Object "╰" -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor1
     $prompt += Write-Prompt -Object $sl.PromptSymbols.PromptIndicator -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor1
     $prompt += Write-Prompt -Object $sl.PromptSymbols.PromptIndicator -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor2
     $prompt += Write-Prompt -Object $sl.PromptSymbols.PromptIndicator -ForegroundColor $sl.Colors.PromptIndicatorForegroundColor3
@@ -89,7 +87,7 @@ $sl.PromptSymbols.SegmentBackwardSymbol = [char]::ConvertFromUtf32(0xE0B2)
 $sl.PromptSymbols.TimeSymbol = ' ' + [char]::ConvertFromUtf32(0x235F)
 $sl.PromptSymbols.FailedCommandSymbol = [char]::ConvertFromUtf32(0x2718)
 $sl.PromptSymbols.SuccessCommandSymbol = [char]::ConvertFromUtf32(0x2714)
-$sl.Colors.PromptForegroundColor = [ConsoleColor]::Black
+$sl.Colors.PromptForegroundColor = [ConsoleColor]::White
 $sl.Colors.PromptBackgroundColor = [ConsoleColor]::DarkBlue
 $sl.Colors.PromptSymbolColor = [ConsoleColor]::White
 $sl.Colors.PromptHighlightColor = [ConsoleColor]::DarkBlue
@@ -103,4 +101,4 @@ $sl.Colors.CommandFailedIconForegroundColor = [System.ConsoleColor]::DarkRed
 $sl.Colors.PromptIndicatorForegroundColor1 = [ConsoleColor]::DarkBlue
 $sl.Colors.PromptIndicatorForegroundColor2 = [ConsoleColor]::DarkYellow
 $sl.Colors.PromptIndicatorForegroundColor3 = [ConsoleColor]::DarkMagenta
-$sl.Colors.PromptUserBackgroundColor = [ConsoleColor]::Cyan
+$sl.Colors.PromptUserBackgroundColor = [ConsoleColor]::Black
