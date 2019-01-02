@@ -1,14 +1,19 @@
-<!-- ![img](https://i.loli.net/2018/05/31/5b0ff51dc2bf9.png) -->
+```
+ ______ _______________________      _____________
+ |     \     | |   |______  |  |     |_____|______
+ |_____/_____| |   |      __|__|_____|___________|
+                                                  
+```
 
 # dotfiles
 
-![love](https://img.shields.io/badge/Made%20with-LOVE-ff69b4.svg)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![zsh](https://img.shields.io/badge/configured%20for-zsh-brightgreen.svg)](https://github.com/robbyrussell/oh-my-zsh)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com)
 
-> ~~Some of my favorite aliases for my .zshrc file.~~ Not anymore.
+*~~Some of my favorite aliases for my .zshrc file.~~ Not anymore.*
 
-This repo contains my dotfiles for `zsh` and `PowerShell`.
+> This repo contains my dotfiles for `zsh` and `PowerShell`.
 
 ## Looks & Features
 
