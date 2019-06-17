@@ -1,15 +1,6 @@
-```
- ______ _______________________      _____________
- |     \     | |   |______  |  |     |_____|______
- |_____/_____| |   |      __|__|_____|___________|
-                                                  
-```
+![](assets/banner.png)
 
 # dotfiles
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com)
 
 *~~Some of my favorite aliases for my .zshrc file.~~ Not anymore.*
 
@@ -17,24 +8,24 @@
 
 ## Looks & Features
 
-- Color Theme: OneHalfDark
-- Font: [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts)
-- Terminal: [Fluent Terminal](https://github.com/felixse/FluentTerminal)
+- Color Theme: Snazzy
+- Font: [Fantasque Sans Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FantasqueSansMono)
+- Terminal:
+  - Option 1: [Fluent Terminal](https://github.com/felixse/FluentTerminal)
+  - Option 2: [Windows Terminal](https://github.com/microsoft/terminal), coming this fall
 
 ### PowerShell
 
 - [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
 - Theme: `SpencerTechy.psm1`
 
-![](https://i.loli.net/2019/01/02/5c2c80ca73fc9.png)
+![](https://i.loli.net/2019/06/17/5d06f4276012f12742.png)
 
 Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information on how to install `Oh-My-Posh`, then:
 
 ```PowerShell
 $ThemeSettings
 ```
-
-![](https://i.loli.net/2019/01/02/5c2c80fa88375.png)
 
 Then check your theme folder, navigate there, and put `SpencerTechy.psm1` there.
 
@@ -49,12 +40,7 @@ Also, here's my PowerShell configuration profile: [ps_profile.ps1](https://githu
 I use:
 
 - [`Get-ChildItemColor`](https://github.com/joonro/Get-ChildItemColor) for better colored `ls`
-
-![](https://i.loli.net/2019/01/02/5c2c815f3633c.png)
-
 - `scoop` as Windows' package manager
-
-![](https://i.loli.net/2019/01/02/5c2c81f55bede.png)
 
 And I removed PowerShell's default alias via:
 
@@ -69,21 +55,21 @@ See [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_prof
 ### ZSH
 
 - [Oh-My-Zsh](https://ohmyz.sh/)
-- [Powerlevel9k](https://github.com/bhilburn/powerlevel9k)
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - [Hyper](https://hyper.is)
 
-**On Linux:**
+#### Manjaro
 
 - ZSH config files: [`_arch_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master/_arch_zshrc)
 - Hyper config files: [`_hyper.js`](https://github.com/spencerwooo/dotfiles/blob/master/_hyper.js)
 
 ![](https://i.loli.net/2018/12/31/5c29a4c819cab.png)
 
-**On WSL Windows:**
+#### Arch Linux WSL
 
 Config files: [`_wsl_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master/_wsl_zshrc)
 
-![](https://i.loli.net/2019/01/02/5c2c7e6e0e165.png)
+![](https://i.loli.net/2019/06/17/5d06f4a7f117954043.png)
 
 ## License
 
