@@ -62,7 +62,7 @@ See [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_prof
 
 ![](https://i.loli.net/2019/06/27/5d144f87a841628789.png)
 
-2. Set Windows theme color: `#3F3F3F`
+2. Set Windows theme color: `#171717`
 3. Show theme colors on title bar and window frame:
 
 ![](https://i.loli.net/2019/06/27/5d144f879a93534999.png)
@@ -115,7 +115,7 @@ Nord Theme:
 
 > ❗ Windows Terminal does not yet work with ColorTool, so you need to convert your desired theme configurations into json. Solarized Dark and Solarized Light are included as default options in Windows Terminal, but for other themes you'll need to apply them manually. The Nord Theme above is an example.
 
-For more information, see [https://github.com/spencerwooo/dotfiles/blob/master/wt_profiles.json].
+For more information, see [wt_profiles.json](https://github.com/spencerwooo/dotfiles/blob/master/wt_profiles.json).
 
 ### ZSH
 
