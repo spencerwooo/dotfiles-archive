@@ -113,7 +113,7 @@ Nord Theme:
 }
 ```
 
-⚠ Windows Terminal does not yet work with ColorTool, so you need to convert your desired theme configurations into json. Solarized Dark and Solarized Light are included as default options in Windows Terminal, but for other themes you'll need to apply them manually. The Nord Theme above is an example.
+> ❗ Windows Terminal does not yet work with ColorTool, so you need to convert your desired theme configurations into json. Solarized Dark and Solarized Light are included as default options in Windows Terminal, but for other themes you'll need to apply them manually. The Nord Theme above is an example.
 
 For more information, see [https://github.com/spencerwooo/dotfiles/blob/master/wt_profiles.json].
 
@@ -139,3 +139,11 @@ Config files: [`_wsl_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master
 ## License
 
 This is published via the [MIT License](https://github.com/spencerwoo98/awesome-alias/blob/master/LICENSE).
+
+---
+
+🚯 **Dotfiles** ©Spencer Woo. Released under the MIT License.
+
+Authored and maintained by Spencer Woo.
+
+[@Blog](https://spencerwoo.com/) - [ⒿJike](https://web.okjike.com/user/4DDA0425-FB41-4188-89E4-952CA15E3C5E/post) - [@GitHub](https://github.com/spencerwooo)
