@@ -27,7 +27,7 @@ Fully customized color scheme, see [_hyper_macos.js](./_hyper_macos.js)
 
 ### WM - yabai
 
-![](https://i.loli.net/2019/08/15/4nLPChVKM9G1dkX.png)
+![](https://i.loli.net/2019/08/15/PcK2W8JXs4xQgdw.png)
 
 [Yabai](https://github.com/koekeishiya/yabai) - a macOS Tiling WM.
 
