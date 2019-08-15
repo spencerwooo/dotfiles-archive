@@ -1,12 +1,40 @@
-![](assets/banner.png)
+# Dotfiles
 
-# dotfiles
+![](https://flat.badgen.net/badge/platform/macOS,Windows,Linux?list=|)
 
-*~~Some of my favorite aliases for my .zshrc file.~~ Not anymore.*
+*Dotfiles for all.*
 
-> This repo contains my dotfiles for zsh, PowerShell, Windows Terminal and more.
+## macOS
 
-## Looks & Features
+### Hyper
+
+![](https://i.loli.net/2019/08/15/Nt9HMKlpJxLaE3Y.png)
+
+Fully customized color scheme, see [_hyper_macos.js](./_hyper_macos.js)
+
+#### Shell
+
+- [Oh-My-Zsh](https://ohmyz.sh/)
+
+#### Console Emulator
+
+- [Hyper](https://hyper.is)
+
+#### ZSH Themes
+
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- [Pure](https://github.com/sindresorhus/pure)
+
+### WM - yabai
+
+![](https://i.loli.net/2019/08/15/4nLPChVKM9G1dkX.png)
+
+[Yabai](https://github.com/koekeishiya/yabai) - a macOS Tiling WM.
+
+- [.yabairc](./_yabairc)
+- [.skhdrc](./_skhdrc)
+
+## Windows
 
 - Color Theme: Nord Theme
 - Font: [Fantasque Sans Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FantasqueSansMono)
@@ -117,20 +145,16 @@ Nord Theme:
 
 For more information, see [wt_profiles.json](https://github.com/spencerwooo/dotfiles/blob/master/wt_profiles.json).
 
-### ZSH
+## Linux
 
-- [Oh-My-Zsh](https://ohmyz.sh/)
-- [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
-- [Hyper](https://hyper.is)
-
-#### Manjaro
+### Manjaro
 
 - ZSH config files: [`_arch_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master/_arch_zshrc)
 - Hyper config files: [`_hyper.js`](https://github.com/spencerwooo/dotfiles/blob/master/_hyper.js)
 
 ![](https://i.loli.net/2018/12/31/5c29a4c819cab.png)
 
-#### Arch Linux WSL
+### Arch Linux WSL (for use on Windows)
 
 Config files: [`_wsl_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master/_wsl_zshrc)
 
