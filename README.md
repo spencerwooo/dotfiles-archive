@@ -1,4 +1,4 @@
-# Dotfiles
+# 🚯 Dotfiles
 
 ![](https://flat.badgen.net/badge/platform/macOS,Windows,Linux?list=|)
 
@@ -10,7 +10,7 @@
 
 ![](https://i.loli.net/2019/08/16/DpztirnBE6yvqh7.png)
 
-Color Scheme: [manta.itermcolors](./manta.itermcolors)
+Color Scheme: [manta.itermcolors](./macOS/manta.itermcolors)
 
 > ⚠️ Please upgrade iTerm2 to the latest 3.3 version in order to achieve the customizable "Minimal Titlebar" and "Status bar".
 
@@ -26,7 +26,7 @@ Recommend:
 
 ![](https://i.loli.net/2019/08/15/Nt9HMKlpJxLaE3Y.png)
 
-Fully customized color scheme, see [_hyper_macos.js](./_hyper_macos.js)
+Fully customized color scheme, see [_hyper_macos.js](./macOS/_hyper_macos.js)
 
 #### Shell
 
@@ -45,8 +45,8 @@ Fully customized color scheme, see [_hyper_macos.js](./_hyper_macos.js)
 
 [Yabai](https://github.com/koekeishiya/yabai) - a macOS Tiling WM.
 
-- [.yabairc](./_yabairc)
-- [.skhdrc](./_skhdrc)
+- [.yabairc](./macOS/_yabairc)
+- [.skhdrc](./macOS/_skhdrc)
 
 ## Windows
 
@@ -59,7 +59,7 @@ Fully customized color scheme, see [_hyper_macos.js](./_hyper_macos.js)
 ### PowerShell
 
 - [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
-- Theme: `SpencerTechy.psm1`
+- Theme: [SpencerTechy.psm1](./Windows/SpencerTechy.psm1)
 
 ![](https://i.loli.net/2019/06/27/5d1452db79b6664465.png)
 
@@ -69,7 +69,7 @@ Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information
 $ThemeSettings
 ```
 
-Then check your theme folder, navigate there, and put `SpencerTechy.psm1` there.
+Then check your theme folder, navigate there, and put [SpencerTechy.psm1](./Windows/SpencerTechy.psm1) there.
 
 Reload theme by:
 
@@ -77,7 +77,7 @@ Reload theme by:
 Set-Theme SpencerTechy
 ```
 
-Also, here's my PowerShell configuration profile: [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_profile.ps1) for reference.
+Also, here's my PowerShell configuration profile: [ps_profile.ps1](./Windows/ps_profile.ps1) for reference.
 
 I use:
 
@@ -92,7 +92,7 @@ If (Test-Path Alias:curl) {Remove-Item Alias:curl}
 If (Test-Path Alias:curl) {Remove-Item Alias:curl}
 ```
 
-See [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_profile.ps1) for detailed information.
+See [ps_profile.ps1](./Windows/ps_profile.ps1) for detailed information.
 
 ### Windows Terminal
 
@@ -113,7 +113,7 @@ See [ps_profile.ps1](https://github.com/spencerwooo/dotfiles/blob/master/ps_prof
 
 |                    Command Prompt                    |                         PowerShell                          |                      Arch Linux                       |
 | :--------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------: |
-| <img src="wt_icons/cmd.ico" alt="CMD" width="100px"> | <img src="wt_icons/powershell.png" alt="CMD" width="100px"> | <img src="wt_icons/arch.png" alt="CMD" width="100px"> |
+| <img src="./Windows/wt_icons/cmd.ico" alt="CMD" width="100px"> | <img src="./Windows/wt_icons/powershell.png" alt="CMD" width="100px"> | <img src="./Windows/wt_icons/arch.png" alt="CMD" width="100px"> |
 
 Put icons under folder:
 
@@ -129,48 +129,24 @@ Set icon in profile:
 
 #### Windows Terminal themes
 
-Nord Theme:
-
-```json
-{
-  "name": "Nord",
-  "background": "#2e3440",
-  "foreground": "#eceff4",
-  "brightBlack": "#2e3440",
-  "brightBlue": "#5e81ac",
-  "brightCyan": "#8fbcbb",
-  "brightGreen": "#a3be8c",
-  "brightPurple": "#b48ead",
-  "brightRed": "#bf616a",
-  "brightWhite": "#eceff4",
-  "brightYellow": "#ebcb8b",
-  "black": "#2e3440",
-  "blue": "#5e81ac",
-  "cyan": "#8fbcbb",
-  "green": "#a3be8c",
-  "purple": "#b48ead",
-  "red": "#bf616a",
-  "white": "#eceff4",
-  "yellow": "#ebcb8b"
-}
-```
+[Windows Terminal Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal) at iTerm Color Scheme repo.
 
 > ❗ Windows Terminal does not yet work with ColorTool, so you need to convert your desired theme configurations into json. Solarized Dark and Solarized Light are included as default options in Windows Terminal, but for other themes you'll need to apply them manually. The Nord Theme above is an example.
 
-For more information, see [wt_profiles.json](https://github.com/spencerwooo/dotfiles/blob/master/wt_profiles.json).
+For more information, see [wt_profiles.json](./Windows/wt_profiles.json).
 
 ## Linux
 
 ### Manjaro
 
-- ZSH config files: [`_arch_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master/_arch_zshrc)
-- Hyper config files: [`_hyper.js`](https://github.com/spencerwooo/dotfiles/blob/master/_hyper.js)
+- ZSH config files: [`_arch_zshrc`](./Linux/_arch_zshrc)
+- Hyper config files: [`_hyper.js`](./Linux/_hyper.js)
 
 ![](https://i.loli.net/2018/12/31/5c29a4c819cab.png)
 
 ### Arch Linux WSL (for use on Windows)
 
-Config files: [`_wsl_zshrc`](https://github.com/spencerwooo/dotfiles/blob/master/_wsl_zshrc)
+Config files: [`_wsl_zshrc`](./Windows/_wsl_zshrc)
 
 ![](https://i.loli.net/2019/06/27/5d1452db6b26815195.png)
 
