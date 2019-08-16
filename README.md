@@ -4,6 +4,14 @@
 
 ![](https://flat.badgen.net/badge/platform/macOS,Windows,Linux?list=|)
 
+> ri • cing /ry-sing/
+>
+> - Making visual improvements and customization to your desktop and/or phone that can simplify your desktop environment but (generally) are completely pointless.
+
+> 好看是第一生产力。
+>
+> —— @SpencerWoo
+
 ## macOS
 
 ### iTerm2
@@ -129,13 +137,23 @@ Set icon in profile:
 
 #### Windows Terminal themes
 
-[Windows Terminal Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal) at iTerm Color Scheme repo.
+[Windows Terminal Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal) at iTerm Color Schemes, GitHub.
 
-> ❗ Windows Terminal does not yet work with ColorTool, so you need to convert your desired theme configurations into json. Solarized Dark and Solarized Light are included as default options in Windows Terminal, but for other themes you'll need to apply them manually. The Nord Theme above is an example.
+> ❗ You cannot use `colortool` to apply a theme to Windows Terminal. Instead, you'll need to manually add the theme (which is in `JSON`) to WT's configuration file.
 
 For more information, see [wt_profiles.json](./Windows/wt_profiles.json).
 
 ## Linux
+
+> ❗I don't use Linux (or Manjaro) any more. I recommend using WSL on Windows. (Or just buy a Mac for god sake.)
+
+### Arch Linux WSL (for use on Windows)
+
+Config files: [`_wsl_zshrc`](./Windows/_wsl_zshrc)
+
+![](https://i.loli.net/2019/06/27/5d1452db6b26815195.png)
+
+<details>
 
 ### Manjaro
 
@@ -144,11 +162,74 @@ For more information, see [wt_profiles.json](./Windows/wt_profiles.json).
 
 ![](https://i.loli.net/2018/12/31/5c29a4c819cab.png)
 
-### Arch Linux WSL (for use on Windows)
+</details>
 
-Config files: [`_wsl_zshrc`](./Windows/_wsl_zshrc)
+## scripts
 
-![](https://i.loli.net/2019/06/27/5d1452db6b26815195.png)
+> Handy scripts for ricing screenshots.
+
+### Neofetch
+
+> Fetch system information (with `--iterm2` option to display wallpaper.)
+
+```shell
+neofetch --iterm2
+```
+
+![](https://i.loli.net/2019/08/16/bDNKLBGAok65xZ9.png)
+
+*Depends on `imagemagick`, only works with Terminals who support displaying inline images.*
+
+### Colortest - [pablopunk/colortest](https://github.com/pablopunk/colortest)
+
+> Quickly show all your terminal colors
+
+```shell
+curl -s https://raw.githubusercontent.com/pablopunk/colortest/master/colortest | bash
+```
+
+![](https://i.loli.net/2019/08/16/rHUa3Qs6bDFv7LV.png)
+
+### `color.sh` - [color.sh](./scripts/color.sh)
+
+> Minimal script to show terminal colors.
+
+```shell
+curl -s https://raw.githubusercontent.com/spencerwooo/dotfiles/master/scripts/color.sh | bash
+```
+
+![](https://i.loli.net/2019/08/16/ZOnMBPUSQcIrsk5.png)
+
+### 256 Color Test
+
+> Print out all 256 colors in your console. See: [Print a 256-color test pattern in the terminal](https://askubuntu.com/questions/821157/print-a-256-color-test-pattern-in-the-terminal/821163#821163)
+
+```shell
+curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash
+```
+
+![](https://i.loli.net/2019/08/16/ZzWE4xriOKXUB6e.png)
+
+### gotop
+
+> Terminal based task manager.
+
+GitHub: [cjbassi/gotop: A terminal based graphical activity monitor inspired by gtop and vtop](https://github.com/cjbassi/gotop)
+
+![](https://i.loli.net/2019/08/16/7dyNAfjPQgeRsl3.png)
+
+### tty-clock
+
+> Terminal based clock.
+
+GitHub: [xorg62/tty-clock](https://github.com/xorg62/tty-clock)
+
+![](https://i.loli.net/2019/08/16/eRdUtOZcIa31Gf2.png)
+
+## Special Thanks
+
+- [elenapan/dotfiles](https://github.com/elenapan/dotfiles)
+- [reddit/r/unixporn](https://www.reddit.com/r/unixporn/)
 
 ## License
 
