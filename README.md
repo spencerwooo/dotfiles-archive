@@ -1,8 +1,8 @@
+[macOS](#macos) | [Windows](#windows) | [Linux](#linux)
+
 # 🚯 Dotfiles
 
 ![](https://flat.badgen.net/badge/platform/macOS,Windows,Linux?list=|)
-
-*Dotfiles for all.*
 
 ## macOS
 
