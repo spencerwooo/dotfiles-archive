@@ -6,6 +6,22 @@
 
 ## macOS
 
+### iTerm2
+
+![](https://i.loli.net/2019/08/16/DpztirnBE6yvqh7.png)
+
+Color Scheme: [manta.itermcolors](./manta.itermcolors)
+
+> ⚠️ Please upgrade iTerm2 to the latest 3.3 version in order to achieve the customizable "Minimal Titlebar" and "Status bar".
+
+Recommend:
+
+- Set "Tab bar height (points) for minimal theme" to 22, under "Preference - Advanced".
+
+![](https://i.loli.net/2019/08/16/dr7Kp2SvsW6xGDt.png)
+
+- Set "Transparency" to near "Opaque", under "Preference - Profiles - Default - Window".
+
 ### Hyper
 
 ![](https://i.loli.net/2019/08/15/Nt9HMKlpJxLaE3Y.png)
@@ -16,14 +32,12 @@ Fully customized color scheme, see [_hyper_macos.js](./_hyper_macos.js)
 
 - [Oh-My-Zsh](https://ohmyz.sh/)
 
-#### Console Emulator
-
-- [Hyper](https://hyper.is)
-
 #### ZSH Themes
 
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - [Pure](https://github.com/sindresorhus/pure)
+
+> Powerlevel10k can generate the same prompt as Pure given the right configuration options. But P10K is able to deal with large git repositories much much faster. See: [romkatv/Pure style for Powerlevel10k.md](https://gist.github.com/romkatv/7cbab80dcbc639003066bb68b9ae0bbf)
 
 ### WM - yabai
 
