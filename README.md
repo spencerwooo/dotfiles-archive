@@ -1,4 +1,4 @@
-[macOS](#macos) | [Windows](#windows) | [Linux](#linux)
+[macOS](#macos) | [Windows](#windows) | [Linux](#linux) | [scripts](#scripts)
 
 # 🚯 Dotfiles
 
