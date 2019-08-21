@@ -69,7 +69,7 @@ Fully customized color scheme, see [_hyper_macos.js](./macOS/_hyper_macos.js)
 - [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
 - Theme: [SpencerTechy.psm1](./Windows/SpencerTechy.psm1)
 
-![](https://i.loli.net/2019/06/27/5d1452db79b6664465.png)
+![](https://i.loli.net/2019/08/21/bl7V3c12GvHBAEQ.png)
 
 Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information on how to install `Oh-My-Posh`, then:
 
@@ -104,35 +104,14 @@ See [ps_profile.ps1](./Windows/ps_profile.ps1) for detailed information.
 
 ### Windows Terminal
 
-![](https://i.loli.net/2019/06/27/5d144eea7d44e73696.png)
+![](https://i.loli.net/2019/08/21/ox6V9lqYBjOfuav.png)
 
-#### Prerequisites
+#### Dark Theme Compatibility
 
-1. Set Windows Theme: DARK
-
-![](https://i.loli.net/2019/06/27/5d144f87a841628789.png)
-
-2. Set Windows theme color: `#171717`
-3. Show theme colors on title bar and window frame:
-
-![](https://i.loli.net/2019/06/27/5d144f879a93534999.png)
-
-#### Windows Terminal icon files
-
-|                    Command Prompt                    |                         PowerShell                          |                      Arch Linux                       |
-| :--------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------: |
-| <img src="./Windows/wt_icons/cmd.ico" alt="CMD" width="100px"> | <img src="./Windows/wt_icons/powershell.png" alt="CMD" width="100px"> | <img src="./Windows/wt_icons/arch.png" alt="CMD" width="100px"> |
-
-Put icons under folder:
-
-```
-C:\<USER_NAME>\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\RoamingState
-```
-
-Set icon in profile:
+Set in Windows Terminal settings:
 
 ```json
-"icon": "ms-appdata:///roaming/cmd.ico"
+"requestedTheme" : "dark"
 ```
 
 #### Windows Terminal themes
@@ -145,13 +124,13 @@ For more information, see [wt_profiles.json](./Windows/wt_profiles.json).
 
 ## Linux
 
-> ❗I don't use Linux (or Manjaro) any more. I recommend using WSL on Windows. (Or just buy a Mac for god sake.)
+> ❗ I don't use Linux (or Manjaro) any more. I recommend using WSL on Windows. (Or just buy a Mac for god sake.)
 
 ### Arch Linux WSL (for use on Windows)
 
 Config files: [`_wsl_zshrc`](./Windows/_wsl_zshrc)
 
-![](https://i.loli.net/2019/06/27/5d1452db6b26815195.png)
+![](https://i.loli.net/2019/08/21/ZMhu2zobPDNWiYw.png)
 
 <details>
 
