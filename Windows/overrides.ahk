@@ -5,7 +5,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Windows and Q closes active window
 #q::
-WinClose, A
+if !WinActive("ahk_class WorkerW")
+	WinClose, A
 return
 
 ; Alt + Enter changes Window between maximized and minimized
