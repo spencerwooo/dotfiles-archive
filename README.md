@@ -1,4 +1,6 @@
-[macOS](#macos) | [Windows](#windows) | [Linux](#linux) | [scripts](#scripts)
+<div align="right">
+<a href="#macos">macOS</a> · <a href="#windows">Windows</a> · <a href="#linux">Linux</a> · <a href="#scripts">scripts</a>
+</div>
 
 # 🚯 Dotfiles
 
