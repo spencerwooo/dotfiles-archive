@@ -18,14 +18,11 @@
 
 ### iTerm2
 
+<h6>🔺WARNING: Please upgrade iTerm2 to the latest 3.3 version in order to achieve the customizable "Minimal Titlebar" and "Status bar".</h6>
+
 ![](https://i.loli.net/2019/08/16/DpztirnBE6yvqh7.png)
 
-Color Scheme: [manta.itermcolors](./macOS/manta.itermcolors)
-
-> ⚠️ Please upgrade iTerm2 to the latest 3.3 version in order to achieve the customizable "Minimal Titlebar" and "Status bar".
-
-Recommend:
-
+- Color Scheme: [manta.itermcolors](./macOS/manta.itermcolors)
 - Set "Tab bar height (points) for minimal theme" to 22, under "Preference - Advanced".
 
 ![](https://i.loli.net/2019/08/16/dr7Kp2SvsW6xGDt.png)
@@ -38,18 +35,12 @@ Recommend:
 
 Fully customized color scheme, see [_hyper_macos.js](./macOS/_hyper_macos.js)
 
-#### Shell
+- Shell: [Oh-My-Zsh](https://ohmyz.sh/)
+- ZSH Themes: [Powerlevel10k](https://github.com/romkatv/powerlevel10k), [Pure](https://github.com/sindresorhus/pure)
 
-- [Oh-My-Zsh](https://ohmyz.sh/)
+<h6>🔺 NOTICE: Powerlevel10k can generate the same prompt as Pure given the right configuration options. But P10K is able to deal with large git repositories much much faster. See: <a href="https://gist.github.com/romkatv/7cbab80dcbc639003066bb68b9ae0bbf">romkatv/Pure style for Powerlevel10k.md</a></h6>
 
-#### ZSH Themes
-
-- [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
-- [Pure](https://github.com/sindresorhus/pure)
-
-> Powerlevel10k can generate the same prompt as Pure given the right configuration options. But P10K is able to deal with large git repositories much much faster. See: [romkatv/Pure style for Powerlevel10k.md](https://gist.github.com/romkatv/7cbab80dcbc639003066bb68b9ae0bbf)
-
-### WM - yabai
+### Window Manager - yabai
 
 ![](https://i.loli.net/2019/08/15/PcK2W8JXs4xQgdw.png)
 
@@ -58,13 +49,23 @@ Fully customized color scheme, see [_hyper_macos.js](./macOS/_hyper_macos.js)
 - [.yabairc](./macOS/_yabairc)
 - [.skhdrc](./macOS/_skhdrc)
 
+### Bitbar Scripts
+
+<h6>Your custom, open source version of iStat Menu.</h6>
+
+**Bitbar**: put the output from any script or program in your macOS menu bar. Scripts I use are available at: [bitbar](./macOS/bitbar)
+
+|                    Colorful battery                    |                       CPU Stats                        |
+| :----------------------------------------------------: | :----------------------------------------------------: |
+| ![](https://i.loli.net/2020/02/02/iC1olKmTRWfuBzb.png) | ![](https://i.loli.net/2020/02/02/k7cIl6vroGASYh9.png) |
+
 ## Windows
 
 - Color Theme: Nord Theme
 - Font: [Fantasque Sans Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FantasqueSansMono)
 - Terminal:
   - Option 1: [Fluent Terminal](https://github.com/felixse/FluentTerminal)
-  - Option 2: [Windows Terminal](https://github.com/microsoft/terminal), available as an early preview on the Windows Store.
+  - Option 2: [Windows Terminal](https://github.com/microsoft/terminal), available on the Windows Store.
 
 ### PowerShell
 
@@ -151,7 +152,7 @@ Config files: [`_wsl_zshrc`](./Windows/_wsl_zshrc)
 
 ### Neofetch
 
-> Fetch system information (with `--iterm2` option to display wallpaper.)
+<h6>Fetch system information (with <code>--iterm2</code> option to display wallpaper.)</h6>
 
 ```shell
 neofetch --iterm2
@@ -159,11 +160,11 @@ neofetch --iterm2
 
 ![](https://i.loli.net/2019/08/16/bDNKLBGAok65xZ9.png)
 
-*Depends on `imagemagick`, only works with Terminals who support displaying inline images.*
+Depends on `imagemagick`, only works with Terminals who support displaying inline images.
 
 ### Colortest - [pablopunk/colortest](https://github.com/pablopunk/colortest)
 
-> Quickly show all your terminal colors
+<h6>Quickly show all your terminal colors</h6>
 
 ```shell
 curl -s https://raw.githubusercontent.com/pablopunk/colortest/master/colortest | bash
@@ -173,7 +174,7 @@ curl -s https://raw.githubusercontent.com/pablopunk/colortest/master/colortest |
 
 ### `color.sh` - [color.sh](./scripts/color.sh)
 
-> Minimal script to show terminal colors.
+<h6>Minimal script to show terminal colors.</h6>
 
 ```shell
 curl -s https://raw.githubusercontent.com/spencerwooo/dotfiles/master/scripts/color.sh | bash
@@ -183,7 +184,7 @@ curl -s https://raw.githubusercontent.com/spencerwooo/dotfiles/master/scripts/co
 
 ### 256 Color Test
 
-> Print out all 256 colors in your console. See: [Print a 256-color test pattern in the terminal](https://askubuntu.com/questions/821157/print-a-256-color-test-pattern-in-the-terminal/821163#821163)
+<h6>Print out all 256 colors in your console. See: <a href="https://askubuntu.com/questions/821157/print-a-256-color-test-pattern-in-the-terminal/821163#821163">Print a 256-color test pattern in the terminal</a></h6>
 
 ```shell
 curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash
@@ -191,17 +192,17 @@ curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1
 
 ![](https://i.loli.net/2019/08/16/ZzWE4xriOKXUB6e.png)
 
-### gotop
+### ytop
 
-> Terminal based task manager.
+<h6>Terminal based task manager.</h6>
 
-GitHub: [cjbassi/gotop: A terminal based graphical activity monitor inspired by gtop and vtop](https://github.com/cjbassi/gotop)
+GitHub: [cjbassi/ytop: Another TUI based system monitor, this time in Rust!](https://github.com/cjbassi/ytop)
 
 ![](https://i.loli.net/2019/08/16/7dyNAfjPQgeRsl3.png)
 
 ### tty-clock
 
-> Terminal based clock.
+<h6>Terminal based clock.</h6>
 
 GitHub: [xorg62/tty-clock](https://github.com/xorg62/tty-clock)
 
@@ -222,4 +223,5 @@ This is published via the [MIT License](https://github.com/spencerwoo98/awesome-
 
 Authored and maintained by Spencer Woo.
 
-[@Blog](https://spencerwoo.com/) - [ⒿJike](https://web.okjike.com/user/4DDA0425-FB41-4188-89E4-952CA15E3C5E/post) - [@GitHub](https://github.com/spencerwooo)
+[@Portfolio](https://spencerwoo.com/) · [@Blog](https://blog.spencerwoo.com/) · [@GitHub](https://github.com/spencerwooo)
+
