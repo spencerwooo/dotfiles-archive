@@ -1,5 +1,5 @@
 <div align="right">
-<a href="#macos">macOS</a> · <a href="#windows">Windows</a> · <a href="#linux">Linux</a> · <a href="#scripts">scripts</a>
+<a href="#macos">macOS</a> · <a href="#windows">Windows</a> · <a href="#linux">Linux</a> · <a href="#scripts">Scripts</a>
 </div>
 
 # 🚯 Dotfiles
@@ -25,7 +25,7 @@
 - Color Scheme: [manta.itermcolors](./macOS/manta.itermcolors)
 - Set "Tab bar height (points) for minimal theme" to 22, under "Preference - Advanced".
 
-![](https://i.loli.net/2019/08/16/dr7Kp2SvsW6xGDt.png)
+  ![](https://i.loli.net/2019/08/16/dr7Kp2SvsW6xGDt.png)
 
 - Set "Transparency" to near "Opaque", under "Preference - Profiles - Default - Window".
 
@@ -51,7 +51,7 @@ Fully customized color scheme, see [_hyper_macos.js](./macOS/_hyper_macos.js)
 
 ### Bitbar Scripts
 
-<h6>Your custom, open source version of iStat Menu.</h6>
+<h6>Your custom, open source version of iStat Menu. 阅读更多：<a href="https://sspai.com/post/58683">监控疫情、看天气、查汇率…… Mac 菜单栏「万能」工具箱：BitBar </a></h6>
 
 **Bitbar**: put the output from any script or program in your macOS menu bar. Scripts I use are available at: [bitbar](./macOS/bitbar)
 
@@ -61,41 +61,37 @@ Fully customized color scheme, see [_hyper_macos.js](./macOS/_hyper_macos.js)
 
 ## Windows
 
-- Color Theme: Nord Theme
-- Font: [Fantasque Sans Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FantasqueSansMono)
-- Terminal:
-  - Option 1: [Fluent Terminal](https://github.com/felixse/FluentTerminal)
-  - Option 2: [Windows Terminal](https://github.com/microsoft/terminal), available on the Windows Store.
+![](https://i.loli.net/2020/02/09/NIKWH3nub1YAQJv.png)
 
 ### PowerShell
 
-- [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
-- Theme: [SpencerTechy.psm1](./Windows/SpencerTechy.psm1)
+| Configurations                     | What I use                                                                                                  |
+| :--------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| Prompt theme engine                | [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh)                                                  |
+| Prompt theme                       | [SpencerTechy.psm1](./Windows/SpencerTechy.psm1)                                                            |
+| Font                               | [JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono) |
+| Color theme (for Windows Terminal) | [Snazzy](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/windowsterminal/Snazzy.json)         |
 
-![](https://i.loli.net/2019/08/21/bl7V3c12GvHBAEQ.png)
-
-Go to [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information on how to install `Oh-My-Posh`, then:
+Go to [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh) for information on how to install. After installing, you can take a look at your oh-my-posh's profile with:
 
 ```PowerShell
 $ThemeSettings
 ```
 
-Then check your theme folder, navigate there, and put [SpencerTechy.psm1](./Windows/SpencerTechy.psm1) there.
+![](https://i.loli.net/2020/02/09/XqNatS79hdCyY1v.png)
 
-Reload theme by:
+We are looking for the directory where oh-my-posh stores all your themes. Navigate to that very directory, and put [SpencerTechy.psm1](./Windows/SpencerTechy.psm1) there. Now, you can enable this theme with:
 
 ```PowerShell
 Set-Theme SpencerTechy
 ```
 
-Also, here's my PowerShell configuration profile: [ps_profile.ps1](./Windows/ps_profile.ps1) for reference.
-
-I use:
+Also, here's my PowerShell configuration profile: [ps_profile.ps1](./Windows/ps_profile.ps1) for reference. I use:
 
 - [`Get-ChildItemColor`](https://github.com/joonro/Get-ChildItemColor) for better colored `ls`
-- `scoop` as Windows' package manager
+- `scoop` as Window's package manager
 
-And I removed PowerShell's default alias via:
+And I removed PowerShell's default alias of `curl` via:
 
 ```powershell
 # Remove curl alias
@@ -107,21 +103,15 @@ See [ps_profile.ps1](./Windows/ps_profile.ps1) for detailed information.
 
 ### Windows Terminal
 
-![](https://i.loli.net/2019/08/21/ox6V9lqYBjOfuav.png)
+<h6>❗ You cannot use <code>colortool</code> to apply a theme to Windows Terminal. Instead, you'll need to manually add the theme (which is in <code>JSON</code>) to Windows Terminal's configuration.</h6>
 
-#### Dark Theme Compatibility
+- Dark variant - defined in Windows Terminal settings:
 
-Set in Windows Terminal settings:
+  ```json
+  "requestedTheme" : "dark"
+  ```
 
-```json
-"requestedTheme" : "dark"
-```
-
-#### Windows Terminal themes
-
-[Windows Terminal Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal) at iTerm Color Schemes, GitHub.
-
-> ❗ You cannot use `colortool` to apply a theme to Windows Terminal. Instead, you'll need to manually add the theme (which is in `JSON`) to WT's configuration file.
+- Windows Terminal themes: [Windows Terminal Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal) at iTerm Color Schemes.
 
 For more information, see [wt_profiles.json](./Windows/wt_profiles.json).
 
@@ -146,9 +136,9 @@ Config files: [`_wsl_zshrc`](./Windows/_wsl_zshrc)
 
 </details>
 
-## scripts
+## Scripts
 
-> Handy scripts for ricing screenshots.
+<h6>Handy scripts for ricing screenshots.</h6>
 
 ### Neofetch
 
@@ -224,4 +214,3 @@ This is published via the [MIT License](https://github.com/spencerwoo98/awesome-
 Authored and maintained by Spencer Woo.
 
 [@Portfolio](https://spencerwoo.com/) · [@Blog](https://blog.spencerwoo.com/) · [@GitHub](https://github.com/spencerwooo)
-

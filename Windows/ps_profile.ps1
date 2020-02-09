@@ -16,12 +16,12 @@ function PrettyLS {
   colorls --light -A
 }
 
-function GitStat {git status}
+function GitStat { git status }
 
-function GoBack {Set-Location ..}
+function GoBack { Set-Location .. }
 
-function GetMyIp {curl -L tool.lu/ip}
-function UpdateScoop {scoop update; scoop update *}
+function GetMyIp { curl -L tool.lu/ip }
+function UpdateScoop { scoop update; scoop update * }
 
 Import-Module posh-git
 Import-Module oh-my-posh
