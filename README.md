@@ -108,7 +108,7 @@ See [ps_profile.ps1](./Windows/ps_profile.ps1) for detailed information.
 - Dark variant - defined in Windows Terminal settings:
 
   ```json
-  "requestedTheme" : "dark"
+  "theme" : "dark"
   ```
 
 - Windows Terminal themes: [Windows Terminal Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal) at iTerm Color Schemes.
